@@ -9,6 +9,7 @@ import Testimonials from './testimonials';
 import Team from './Team';
 import Contact from './contact';
 import $ from 'jquery';
+import Login from './login';
 
 export class App extends Component {
   state = {
@@ -36,15 +37,16 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Navigation />
-        <Header data={this.state.resumeData.Header}/>
-        <Features data={this.state.resumeData.Features}/>
+        {/* <Navigation />
+        <Header data={this.state.resumeData.Header}/> */}
+        <Login />
+        {/* <Features data={this.state.resumeData.Features}/>
         <About  data={this.state.resumeData.About}/>
         <Services  data={this.state.resumeData.Services}/>
         <Gallery />
         <Testimonials  data={this.state.resumeData.Testimonials}/>
         <Team  data={this.state.resumeData.Team}/>
-        <Contact  data={this.state.resumeData.Contact}/>
+        <Contact  data={this.state.resumeData.Contact}/> */}
       </div>
     )
   }
